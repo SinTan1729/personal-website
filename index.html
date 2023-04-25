@@ -14,25 +14,41 @@
         }
     </script>
     <style>
-        div {
+        .container {
             margin: 0 auto;
             max-width: 800px;
         }
 
         img {
             border: 5px solid #333;
+            padding: 1px;
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+        }
+
+        .column[name="mail"] {
+            text-align: right;
         }
     </style>
 </head>
 
 <body onload="putYear()">
-    <div>
+    <div class="container">
         <center>
             <img src="https://www.gravatar.com/avatar/a5114f8f2ab803638d442ab3cb39d329?s=300" />
             <h1>Sayantan Santra (সায়ন্তন সাঁতরা)</h1>
         </center>
-        <p>Office: PHSC 903</p>
-        <p>Email: sayantan[dot]santra[at]ou.edu</p>
+        <div class="row">
+            <div class="column">Office: PHSC 903</div>
+            <div class="column" name="mail">Email: sayantan[dot]santra[at]ou.edu</div>
+        </div>
 
         <hr />
         <p>I'm a <span id="year-span"></span> year PhD student in the Department of Mathematics
