@@ -1,0 +1,57 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+}
+
+img {
+    border: 5px solid #333;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column[name="mail"] {
+    text-align: right;
+}
+
+.mobile-name {
+    display: none;
+}
+
+@media (pointer:none),
+(pointer:coarse) {
+    .row {
+        display: block;
+    }
+
+    .column[name="mail"] {
+        text-align: left;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+    .pc-name {
+        display: none;
+    }
+
+    .mobile-name {
+        display: block;
+    }
+}
