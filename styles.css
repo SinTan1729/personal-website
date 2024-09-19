@@ -37,11 +37,11 @@ img {
     flex: 50%;
 }
 
-.column[name="mail"] {
+.column.mail {
     text-align: right;
 }
 
-.mobile-name {
+.mobile {
     display: none;
 }
 
@@ -51,7 +51,7 @@ img {
         display: block;
     }
 
-    .column[name="mail"] {
+    .column.mail {
         text-align: left;
     }
 
@@ -59,11 +59,11 @@ img {
         text-align: left;
     }
 
-    .pc-name {
+    .pc {
         display: none;
     }
 
-    .mobile-name {
+    .mobile {
         display: block;
     }
 }
