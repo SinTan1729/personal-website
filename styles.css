@@ -37,7 +37,7 @@ img {
     flex: 50%;
 }
 
-.column.mail {
+.column.office {
     text-align: right;
 }
 
@@ -51,7 +51,7 @@ img {
         display: block;
     }
 
-    .column.mail {
+    .column.office {
         text-align: left;
     }
 
