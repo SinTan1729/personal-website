@@ -17,6 +17,11 @@
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .header {
@@ -80,6 +85,12 @@ details[open] summary {
 
 @media (pointer:none),
 (pointer:coarse) {
+    .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 90%;
+    }
+
     .row {
         display: block;
     }
