@@ -8,10 +8,15 @@
     <title>Sayantan Santra | PhD Candidate at the University of Oklahoma</title>
     <script>
         function loader() {
-            // put last modified
+            // Put last modified time
             const last_modified_span = document.getElementById("last-modified");
-            const last_modified = new Date(document.lastModified);
-            last_modified_span.innerHTML = last_modified.toDateString();
+            const last_modified_time = new Date(document.lastModified);
+            last_modified_span.innerHTML = last_modified_time.toDateString();
+            // Open all links in new tab
+            document.querySelectorAll("a").forEach(url => {
+                url.target = "_blank";
+                url.rel = "noreferrer noopener";
+            })
         }
     </script>
 
@@ -59,6 +64,14 @@
             <li>\(\ell\)-adic Modular Forms</li>
         </ul>
         I'm also pretty decent in SageMath, Haskell, Lean 4, Rust, Python, and a few other programming languages.</p>
+        
+        <details>
+        <summary>Upcoming</summary>
+        <ul>
+            <li>I'll be attending the <a href=https://cst.temple.edu/department-mathematics/events/gta-philadelphia>
+                2025 GTA Philadelphia Conference </a>in late May. </li>
+        </ul>
+        </details>
 
         <details>
         <summary>Contact</summary>
