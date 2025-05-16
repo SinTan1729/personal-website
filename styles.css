@@ -68,6 +68,7 @@ details {
 }
 
 summary {
+    cursor: pointer;
     font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
