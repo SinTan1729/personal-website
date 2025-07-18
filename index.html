@@ -1,111 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sayantan Santra</title>
-    <meta name="description" content="Mathematics PhD Candidate at the University of Oklahoma" />
+    <meta
+      name="description"
+      content="Mathematics PhD Candidate at the University of Oklahoma"
+    />
     <meta property="og:title" content="Sayantan Santra" />
-    <meta property="og:description" content="Mathematics PhD Candidate at the University of Oklahoma" />
-    <meta property="og:image" content="https://about.sayantansantra.com/assets/sayantan_santra.webp" />
-    <script>
-        function loader() {
-            // Put last modified time
-            const last_modified_span = document.getElementById("last-modified");
-            const last_modified_time = new Date(document.lastModified);
-            last_modified_span.innerHTML = last_modified_time.toDateString();
-            // Open all links in new tab
-            document.querySelectorAll("a").forEach(url => {
-                url.target = "_blank";
-                url.rel = "noreferrer noopener";
-            })
-        }
-    </script>
+    <meta
+      property="og:description"
+      content="Mathematics PhD Candidate at the University of Oklahoma"
+    />
+    <meta
+      property="og:image"
+      content="https://about.sayantansantra.com/assets/sayantan_santra.webp"
+    />
 
-    <link rel="stylesheet" type="text/css" target="_blank" href="styles.css">
+    <link rel="stylesheet" type="text/css" target="_blank" href="styles.css" />
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/favicon.ico"
+      sizes="any"
+    />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/favicon-196.png" sizes="196x196" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon-196.png"
+      sizes="196x196"
+    />
 
     <!-- Code for KaTeX math rendering -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
-    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
-    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
-    crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+      integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
 
-<body onload="loader()">
+  <body>
     <div class="container">
-        <div class="header">
-            <img src="assets/sayantan_santra.webp" width=200 alt="Picture of Sayantan Santra" />
-            <h2 class="pc name">
-                Sayantan Santra <br />
-                সায়ন্তন সাঁতরা <br />
-                <a href=https://en.wikipedia.org/wiki/Bengali_phonology>IPA</a>: /ʃɑ.e̯ɔn.t̪ɔn ʃãt.ra/
-            </h2>
-            <h3 class="mobile name">Sayantan Santra<br />সায়ন্তন সাঁতরা<br /><a
-                    href=https://en.wikipedia.org/wiki/Bengali_phonology>IPA</a>: /ʃɑ.e̯ɔn.t̪ɔn ʃãt.ra/</h3>
-        </div>
-
-        <p>I'm a PhD candidate in the Department of Mathematics
-            at the University of Oklahoma, working with
-            <a href="https://kimballmartin.github.io/">Dr. Kimball Martin</a>.
-        </p>
-        <p>Previously, I received an M. Math. from the Indian Statistical Institute.</p>
-
-        <p>I do research in Algebraic and Computational Number Theory. Some of my areas of interest are:
-        <ul>
-            <li>Mod \(\ell\) Congruences of Modular Forms</li>
-            <li>\(\ell\)-adic Galois Representations</li>
-            <li>\(\ell\)-adic Modular Forms</li>
-        </ul>
-        I'm also pretty decent in SageMath, Haskell, Lean 4, Rust, Go, Python, and a few other programming languages.</p>
-
-        <details>
-            <summary>Teaching</summary>
-            I'm not teaching this summer due to being supported by a research fellowship.
-        </details>
-        
-        <details>
-        <summary>Upcoming</summary>
-            Nothing for now.
-        </details>
-
-        <details>
-        <summary>Contact</summary>
-            Office: PHSC 910 <br />
-            Academic email: <a href="mailto:mail@sayantansantra.com">mail@sayantansantra.com</a>
-            (Use the PGP key
-            <a href=https://keys.openpgp.org/vks/v1/by-fingerprint/B7772D9CDFAE54AE8536A390A3319D1C521C0719>A3319D1C521C0719</a>
-            to encrypt.)
-            <br />
-            Personal email: <a href="mailto:sayantan.santra@ou.edu">sayantan.santra@ou.edu</a>
-            (Use the PGP key
-            <a href=https://keys.openpgp.org/vks/v1/by-fingerprint/D67BB76BA4D51AA68C99F63EA830DCA45BCE2E08>A830DCA45BCE2E08</a>
-            to encrypt.)
-        </details>
-
-        <h3 class="Links">
-            <a class="button" href=https://links.sayantansantra.com/cv>CV</a>
-            <a class="button" href=https://links.sayantansantra.com/github>GitHub</a>
-            <a class="button" href=https://links.sayantansantra.com/wiki-coffee>Coffee</a>
-            <a class="button" href=https://links.sayantansantra.com/wiki-linux>Linux</a>
+      <div class="header">
+        <img
+          src="assets/sayantan_santra.webp"
+          width="200"
+          alt="Picture of Sayantan Santra"
+        />
+        <h2 class="pc name">
+          Sayantan Santra <br />
+          সায়ন্তন সাঁতরা <br />
+          <a href="https://en.wikipedia.org/wiki/Bengali_phonology">IPA</a>:
+          /ʃɑ.e̯ɔn.t̪ɔn ʃãt.ra/
+        </h2>
+        <h3 class="mobile name">
+          Sayantan Santra<br />সায়ন্তন সাঁতরা<br /><a
+            href="https://en.wikipedia.org/wiki/Bengali_phonology"
+            >IPA</a
+          >: /ʃɑ.e̯ɔn.t̪ɔn ʃãt.ra/
         </h3>
+      </div>
 
-        <hr />
-        <i>This page was last updated on <span id="last-modified"></span>. 
-            <a href=https://git.sayantansantra.com/SinTan1729/personal-website>(Source Code)</a></i>
+      <div>
+        I'm a PhD candidate in the Department of Mathematics at the University
+        of Oklahoma, working with
+        <a href="https://kimballmartin.github.io/">Dr. Kimball Martin</a>.
+      </div>
+      <div>
+        Previously, I received an M. Math. from the Indian Statistical
+        Institute.
+      </div>
+
+      <div>
+        I do research in Algebraic and Computational Number Theory. Some of my
+        areas of interest are:
+        <ul>
+          <li>Mod \(\ell\) Congruences of Modular Forms</li>
+          <li>\(\ell\)-adic Galois Representations</li>
+          <li>\(\ell\)-adic Modular Forms</li>
+        </ul>
+        I'm also pretty decent in SageMath, Haskell, Lean 4, Rust, Go, Python,
+        and a few other programming languages.
+      </div>
+      <br />
+
+      <details>
+        <summary>Teaching</summary>
+        I'm not teaching this summer due to being supported by a research
+        fellowship.
+      </details>
+
+      <details>
+        <summary>Upcoming</summary>
+        Nothing for now.
+      </details>
+
+      <details>
+        <summary>Contact</summary>
+        Office: PHSC 910 <br />
+        Academic email:
+        <a href="mailto:mail@sayantansantra.com">mail@sayantansantra.com</a>
+        (Use the PGP key
+        <a
+          href="https://keys.openpgp.org/vks/v1/by-fingerprint/B7772D9CDFAE54AE8536A390A3319D1C521C0719"
+          >A3319D1C521C0719</a
+        >
+        to encrypt.)
+        <br />
+        Personal email:
+        <a href="mailto:sayantan.santra@ou.edu">sayantan.santra@ou.edu</a>
+        (Use the PGP key
+        <a
+          href="https://keys.openpgp.org/vks/v1/by-fingerprint/D67BB76BA4D51AA68C99F63EA830DCA45BCE2E08"
+          >A830DCA45BCE2E08</a
+        >
+        to encrypt.)
+      </details>
+
+      <h3 class="Links">
+        <a class="button" href="https://links.sayantansantra.com/cv">CV</a>
+        <a class="button" href="https://links.sayantansantra.com/github"
+          >GitHub</a
+        >
+        <a class="button" href="https://links.sayantansantra.com/wiki-coffee"
+          >Coffee</a
+        >
+        <a class="button" href="https://links.sayantansantra.com/wiki-linux"
+          >Linux</a
+        >
+      </h3>
+
+      <hr />
+      <i
+        >This page was last updated on <span id="last-modified"></span>.
+        <a href="https://git.sayantansantra.com/SinTan1729/personal-website"
+          >(Source Code)</a
+        ></i
+      >
     </div>
     <!-- This is meant for Mastodon verification, and is hidden by default. -->
     <a rel="me" href="https://mas.to/@sayantansantra" hidden>Mastodon</a>
-</body>
-
+  </body>
 </html>
