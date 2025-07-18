@@ -1,15 +1,20 @@
 # SPDX-FileCopyrightText: 2025 Sayantan Santra <sayantan.santra689@gmail.com>
 # SPDX-License-Identifier: GPL-3.0
 
-.PHONY: publish
+.PHONY: publish deploy minify clean
 
-current_dir = $(shell pwd)
-timestamp:=$(shell date +%s)
-publish:
-	@echo "Minifying resources..."
-	@minify -rs "${PWD}/" -o "/tmp/personal-website/${timestamp}/"
-	@echo "Deploying website for public access..."
-	@rsync -aAXhP "/tmp/personal-website/${timestamp}/" "vps-rsync:/srv/personal-website/"
+clean:
 	@echo "Cleaning up..."
-	@rm -rf "/tmp/personal-website/${timestamp}/"
+	rm -rf "./minified-tmp/"
+
+minify:
+	rm -rf "./minified-tmp/"
+	@echo "Minifying resources..."
+	minify -rs "${PWD}/" -o "./minified-tmp/"
+
+deploy: minify
+	@echo "Deploying website for public access..."
+	rsync -aAXhP "./minified-tmp/" "vps-rsync:/srv/personal-website/"
+
+publish: deploy clean
 	@echo "Done!"
