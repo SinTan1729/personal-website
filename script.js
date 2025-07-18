@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2025 Sayantan Santra <sayantan.santra689@gmail.com>
+// SPDX-License-Identifier: GPL-3.0
+
 const loader = () => {
   // Put last modified time
   const last_modified_span = document.getElementById("last-modified");
