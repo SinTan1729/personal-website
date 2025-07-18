@@ -7,16 +7,23 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
-* {
+:root {
+  color-scheme: light dark;
   font-family: Montserrat;
+}
+body {
+  color: light-dark(black, #e8e6e3);
+  background-color: light-dark(white, #181a1b);
 }
 
 .container {
@@ -49,6 +56,9 @@ img {
   flex: 50%;
 }
 
+a {
+  color: light-dark(blue, #3391ff);
+}
 a.button {
   padding: 1px 6px;
   border: 1px outset buttonborder;
@@ -66,12 +76,6 @@ a.button {
   display: none;
 }
 
-details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
-}
-
 summary {
   cursor: pointer;
   font-weight: bold;
@@ -79,10 +83,14 @@ summary {
   padding: 0.5em;
 }
 
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
 details[open] {
   padding: 0.5em;
 }
-
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
