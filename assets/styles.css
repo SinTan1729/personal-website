@@ -28,7 +28,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 60em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,8 +43,8 @@ body {
 }
 
 img {
-  border: 5px solid #333;
-  padding: 1px;
+  border: 0.2em solid #333;
+  padding: 0.1em;
   border-radius: 50%;
 }
 
@@ -59,10 +59,16 @@ img {
 a {
   color: light-dark(blue, #3391ff);
 }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  align-items: flex-start;
+}
 a.button {
-  padding: 1px 6px;
-  border: 1px outset buttonborder;
-  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  border: 0.1em outset buttonborder;
+  border-radius: 0.2em;
   color: buttontext;
   background-color: buttonface;
   text-decoration: none;
@@ -84,15 +90,15 @@ summary {
 }
 
 details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  border: 0.1em solid #aaa;
+  border-radius: 0.2em;
   padding: 0.5em 0.5em 0;
 }
 details[open] {
   padding: 0.5em;
 }
 details[open] summary {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 0.1em solid #aaa;
   margin-bottom: 0.5em;
 }
 
