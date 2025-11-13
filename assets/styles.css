@@ -68,7 +68,7 @@ a {
 a.button {
   padding: 0.1em 0.3em;
   border: 0.1em outset buttonborder;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   color: buttontext;
   background-color: buttonface;
   text-decoration: none;
@@ -91,7 +91,7 @@ summary {
 
 details {
   border: 0.1em solid #aaa;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   margin: 0.2em;
   padding: 0.5em 0.5em 0;
 }
