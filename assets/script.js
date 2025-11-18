@@ -16,8 +16,23 @@ const openInNewTab = () => {
   });
 };
 
+// Only open one detail element at one time
+const onlyOpenOneDetail = () => {
+  const detailsList = document.querySelectorAll("details");
+  function handleDetailToggle(event) {
+    if (event.newState == "closed") return;
+    for (let detail of detailsList) {
+      detail.open = detail == event.target;
+    }
+  }
+  for (let details of detailsList) {
+    details.ontoggle = handleDetailToggle;
+  }
+};
+
 // Start loading here
 lastModifiedTime();
 openInNewTab();
+onlyOpenOneDetail();
 // This uses KaTeX script loaded earlier
 renderMathInElement(document.body);
