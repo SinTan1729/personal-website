@@ -28,11 +28,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 60em;
+  width: 60em;
   position: absolute;
-  top: 50%;
+  top: 20vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .header {
@@ -94,6 +94,7 @@ details {
   border-radius: 0.5em;
   margin: 0.2em;
   padding: 0.5em 0.5em 0;
+  max-width: 60em;
 }
 details[open] {
   padding: 0.5em;
@@ -108,7 +109,7 @@ details[open] summary {
     width: 98%;
     top: 1%;
     left: 1%;
-    transform: translate(0%, 0%);
+    transform: translateX(0%);
   }
 
   .row {
