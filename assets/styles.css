@@ -94,7 +94,7 @@ summary {
 details {
   border: 0.1em solid #aaa;
   border-radius: 0.5em;
-  margin: 0.2em;
+  margin-bottom: 0.3em;
   padding: 0.5em 0.5em 0;
   max-width: 60em;
 }
@@ -108,9 +108,9 @@ details[open] summary {
 
 @media (pointer: none), (pointer: coarse) {
   .container {
-    width: 98%;
+    width: 94%;
     top: 1%;
-    left: 1%;
+    left: 3%;
     transform: translateX(0%);
   }
 
