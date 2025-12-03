@@ -2,6 +2,7 @@
 /* SPDX-License-Identifier: GPL-3.0 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300&display=swap");
 @font-face {
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
@@ -16,6 +17,13 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
 :root {
   color-scheme: light dark;
@@ -24,6 +32,9 @@
 body {
   color: light-dark(black, #e8e6e3);
   background-color: light-dark(white, #181a1b);
+}
+.bangla {
+  font-family: "Noto Sans Bengali";
 }
 
 .container {
@@ -51,9 +62,14 @@ img {
 .row {
   display: flex;
 }
-
 .column {
   flex: 50%;
+}
+.left-column {
+  text-align: left;
+}
+.right-column {
+  text-align: right;
 }
 
 a {
@@ -75,11 +91,7 @@ a.button {
   user-select: none;
 }
 
-.pc {
-  text-align: left;
-}
-
-.mobile {
+.mobile-view {
   display: none;
 }
 
@@ -122,11 +134,11 @@ details[open] summary {
     display: inline;
   }
 
-  .pc {
+  .pc-view {
     display: none;
   }
 
-  .mobile {
+  .mobile-view {
     display: block;
   }
 }
