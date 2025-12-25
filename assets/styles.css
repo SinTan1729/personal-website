@@ -41,7 +41,7 @@ body {
   margin: 0 auto;
   width: 60em;
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 50%;
   transform: translateX(-50%);
 }
