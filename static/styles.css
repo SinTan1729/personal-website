@@ -44,7 +44,7 @@ h1 {
   margin: 0 auto;
   width: 60em;
   position: absolute;
-  top: 15vh;
+  top: min(15vh, calc(50vh - 25em));
   left: 50%;
   transform: translateX(-50%);
 }
