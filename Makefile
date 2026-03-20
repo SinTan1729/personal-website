@@ -15,7 +15,7 @@ minify:
 
 deploy: minify
 	@echo "Deploying website for public access..."
-	rsync -aAXhP --delete "./minified-tmp/" "vps-rsync:/srv/personal-website/"
+	rsync -aAXhP --delete "./minified-tmp/" "vps-rsync:/srv/admin/personal-website/"
 
 publish: deploy clean
 	@echo "Done!"
