@@ -11,7 +11,7 @@ minify:
 	rm -rf "./minified-tmp/"
 	@echo "Minifying resources..."
 	minify -rs "${PWD}/" -o "./minified-tmp/"
-	find ./minified-tmp/ -type f -regextype egrep -not -regex '.+\.(html|js|css|svg|ico|png|webp)' -delete
+	find ./minified-tmp/ -type f -regextype egrep -not -regex '.+\.(html|js|css|svg|ico|png|webp|jpg)' -delete
 
 deploy: minify
 	@echo "Deploying website for public access..."
