@@ -126,7 +126,7 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
-@media (pointer: none), (pointer: coarse) {
+@media (max-width: 768px) {
   .container {
     width: 94%;
     top: 1%;
