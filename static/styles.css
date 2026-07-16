@@ -42,7 +42,7 @@ h1 {
 
 .container {
   margin: 0 auto;
-  width: 60em;
+  width: min(60em, 95vw);
   position: absolute;
   top: min(15vh, calc(50vh - 25em));
   left: 50%;
