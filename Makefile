@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Sayantan Santra <sayantan.santra689@gmail.com>
 # SPDX-License-Identifier: GPL-3.0
 
-.PHONY: publish deploy minify clean
+.PHONY: publish deploy minify clean purge-cache
 
 clean:
 	@echo "Cleaning up..."
@@ -17,5 +17,29 @@ deploy: minify
 	@echo "Deploying website for public access..."
 	rsync -aAXhP --delete "./minified-tmp/" "vps-rsync:/srv/admin/personal-website/"
 
-publish: deploy clean
+purge-cache:
+	@set -e; \
+	token="$$(cat "$$HOME/.config/cloudflare_cache_purge_token")"; \
+	zone_id="$$(curl -fsS \
+		"https://api.cloudflare.com/client/v4/zones?name=sayantansantra.com" \
+		-H "Authorization: Bearer $$token" \
+		| jq -r '.result[0].id')"; \
+	if [ -z "$$zone_id" ] || [ "$$zone_id" = "null" ]; then \
+		echo "Failed to find Cloudflare zone for about.sayantansantra.com" >&2; \
+		exit 1; \
+	fi; \
+	response="$$(curl -fsS \
+		-X POST \
+		"https://api.cloudflare.com/client/v4/zones/$$zone_id/purge_cache" \
+		-H "Authorization: Bearer $$token" \
+		-H "Content-Type: application/json" \
+		--data '{"hosts":["about.sayantansantra.com"]}')"; \
+	if ! printf '%s\n' "$$response" | jq -e '.success == true' >/dev/null; then \
+		echo "Cloudflare cache purge failed:" >&2; \
+		printf '%s\n' "$$response" | jq . >&2; \
+		exit 1; \
+	fi; \
+	echo "Cloudflare cache purged for about.sayantansantra.com"
+
+publish: deploy clean purge-cache
 	@echo "Done!"
