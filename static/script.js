@@ -10,6 +10,5 @@ const lastModifiedTime = () => {
 
 // Start loading here
 lastModifiedTime();
-openInNewTab();
 // This uses KaTeX script loaded earlier
 renderMathInElement(document.body);
