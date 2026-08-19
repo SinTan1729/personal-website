@@ -3,9 +3,11 @@
 
 // Put last modified time inside page
 const lastModifiedTime = () => {
-  const last_modified_span = document.getElementById("last-modified");
-  const last_modified_time = new Date(document.lastModified);
-  last_modified_span.innerHTML = last_modified_time.toDateString();
+  const lastModifiedView = document.getElementById("last-modified");
+  const lastModifiedTime = new Date(document.lastModified);
+
+  lastModifiedView.dateTime = lastModifiedTime.toISOString();
+  lastModifiedView.textContent = lastModifiedTime.toDateString();
 };
 
 // Start loading here
