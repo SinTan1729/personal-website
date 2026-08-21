@@ -2,3 +2,8 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 *.woff2 filter=lfs diff=lfs merge=lfs -text
+resources/favicon-32.png filter=lfs diff=lfs merge=lfs -text
+resources/favicon-196.png filter=lfs diff=lfs merge=lfs -text
+resources/favicon.ico filter=lfs diff=lfs merge=lfs -text
+resources/favicon.svg filter=lfs diff=lfs merge=lfs -text
+resources/sayantan_santra.webp filter=lfs diff=lfs merge=lfs -text
