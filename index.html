@@ -44,10 +44,18 @@
       sizes="196x196"
     />
 
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap"
+    />
     <!-- Code for KaTeX math rendering -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
@@ -72,14 +80,14 @@
   <body>
     <div class="container">
       <div class="header row">
-        <div class="column left-column">
+        <div class="column left-aligned">
           <img
             src="resources/sayantan_santra.webp"
             width="150"
             alt="Picture of Sayantan Santra"
           />
         </div>
-        <div class="column left-column">
+        <div class="column left-aligned">
           <h2 class="pc-view">
             Sayantan Santra <br />
             <span class="bangla">সায়ন্তন সাঁতরা </span><br />
@@ -137,15 +145,12 @@
         <summary>Contact</summary>
         <ul>
           <li>
-            <u>Office</u>: PHSC 1021 (Temporarily in 928), Department of
-            Mathematics, OU
+            <strong>Office</strong>: PHSC 1021 (Temporarily in 928), Department
+            of Mathematics, OU
           </li>
           <li>
-            <u>Academic email</u>:
-            <a
-              href="mailto:sayantan.santra@ou.edu"
-              target="_blank"
-              rel="noopener noreferrer"
+            <strong>Academic email</strong>:
+            <a href="mailto:sayantan.santra@ou.edu" rel="noopener noreferrer"
               >sayantan.santra@ou.edu</a
             >
             (Use the PGP key
@@ -158,11 +163,8 @@
             to encrypt.)
           </li>
           <li>
-            <u>Personal email</u>:
-            <a
-              href="mailto:mail@sayantansantra.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <strong>Personal email</strong>:
+            <a href="mailto:mail@sayantansantra.com" rel="noopener noreferrer"
               >mail@sayantansantra.com</a
             >
             (Use the PGP key
@@ -200,7 +202,7 @@
       </details>
 
       <h1>Some links</h1>
-      <h3 class="links">
+      <nav class="links">
         <a
           class="button"
           href="https://chhoto.link/cv"
@@ -250,16 +252,16 @@
           rel="noopener noreferrer"
           >Mastodon</a
         >
-      </h3>
+      </nav>
 
       <div class="row">
-        <div class="column left-column muted">
+        <div class="column left-aligned muted">
           <i
             >This page was last updated on
             <time id="last-modified">$placeholder</time>.</i
           >
         </div>
-        <div class="column right-column">
+        <div class="column right-aligned">
           <i
             ><a
               class="muted"

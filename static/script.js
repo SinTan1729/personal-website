@@ -7,7 +7,11 @@ const lastModifiedTime = () => {
   const lastModifiedTime = new Date(document.lastModified);
 
   lastModifiedView.dateTime = lastModifiedTime.toISOString();
-  lastModifiedView.textContent = lastModifiedTime.toDateString();
+  lastModifiedView.textContent = lastModifiedTime.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 };
 
 // Start loading here

@@ -1,35 +1,12 @@
 /* SPDX-FileCopyrightText: 2025 Sayantan Santra <sayantan.santra689@gmail.com> */
 /* SPDX-License-Identifier: GPL-3.0 */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300&display=swap");
-@font-face {
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Sans Bengali", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
 :root {
   color-scheme: light dark;
   font-family: Montserrat;
 }
 body {
+  font-family: Montserrat, sans-serif;
   color: light-dark(black, #e8e6e3);
   background-color: light-dark(white, #181a1b);
 }
@@ -37,7 +14,7 @@ h1 {
   font-size: 1.3em;
 }
 .bangla {
-  font-family: "Noto Sans Bengali";
+  font-family: "Noto Sans Bengali Light", sans-serif;
 }
 
 .container {
@@ -53,7 +30,7 @@ h1 {
   text-align: left;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-aligneds: 1fr 1fr;
 }
 
 img {
@@ -68,10 +45,10 @@ img {
 .column {
   flex: 50%;
 }
-.left-column {
+.left-aligned {
   text-align: left;
 }
-.right-column {
+.right-aligned {
   text-align: right;
 }
 
@@ -128,6 +105,10 @@ details[open] {
 details[open] summary {
   border-bottom: 0.1em solid #aaaaaa;
   margin-bottom: 0.5em;
+}
+nav {
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 768px) {

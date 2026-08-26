@@ -25,7 +25,7 @@ purge-cache:
 		-H "Authorization: Bearer $$token" \
 		| jq -r '.result[0].id')"; \
 	if [ -z "$$zone_id" ] || [ "$$zone_id" = "null" ]; then \
-		echo "Failed to find Cloudflare zone for about.sayantansantra.com" >&2; \
+		echo "Failed to find Cloudflare zone for sayantansantra.com" >&2; \
 		exit 1; \
 	fi; \
 	response="$$(curl -fsS \
@@ -41,5 +41,8 @@ purge-cache:
 	fi; \
 	echo "Cloudflare cache purged for about.sayantansantra.com"
 
-publish: deploy clean purge-cache
+publish:
+	@$(MAKE) deploy
+	@$(MAKE) clean
+	@$(MAKE) purge-cache
 	@echo "Done!"
