@@ -5,17 +5,17 @@
 
 clean:
 	@echo "Cleaning up..."
-	rm -rf "./minified-tmp/"
+	rm -rf "/tmp/personal-website/"
 
 minify:
-	rm -rf "./minified-tmp/"
+	rm -rf "/tmp/personal-website/"
 	@echo "Minifying resources..."
-	minify -rs "${PWD}/" -o "./minified-tmp/"
-	find ./minified-tmp/ -type f -regextype egrep -not -regex '.+\.(html|js|css|svg|ico|png|webp|jpg)' -delete
+	minify -rs "${PWD}/" -o "/tmp/personal-website/"
+	find "/tmp/personal-website/" -type f -regextype egrep -not -regex '.+\.(html|js|css|svg|ico|png|webp|jpg)' -delete
 
 deploy: minify
 	@echo "Deploying website for public access..."
-	rsync -aAXhP --delete "./minified-tmp/" "vps-rsync:/srv/admin/personal-website/"
+	rsync -aAXhP --delete "/tmp/personal-website/" "vps-rsync:/srv/admin/personal-website/"
 
 purge-cache:
 	@set -e; \
