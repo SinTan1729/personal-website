@@ -75,6 +75,7 @@ a.button {
   display: none;
 }
 
+.details,
 .muted {
   font-size: 0.9em;
   color: light-dark(#6b7280, #9ca3af);
