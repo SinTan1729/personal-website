@@ -120,6 +120,13 @@ nav {
     transform: translateX(0%);
   }
 
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+
   div ul,
   details ul {
     padding-left: 1.2em;
