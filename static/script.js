@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0
 
 // Put last modified time inside page
-const lastModifiedTime = () => {
+const putLastModifiedTime = () => {
   const lastModifiedView = document.getElementById('last-modified');
   const lastModifiedTime = new Date(document.lastModified);
 
@@ -15,6 +15,11 @@ const lastModifiedTime = () => {
 };
 
 // Start loading here
-lastModifiedTime();
+putLastModifiedTime();
 // This uses KaTeX script loaded earlier
-renderMathInElement(document.body);
+document.body.querySelectorAll('.math').forEach((item) => {
+  renderMathInElement(item, {
+    delimiters: [{ left: '\\(', right: '\\)', display: false }],
+    throwOnError: true,
+  });
+});

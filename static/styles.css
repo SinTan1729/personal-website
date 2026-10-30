@@ -13,7 +13,7 @@ body {
 h1 {
   font-size: 1.3em;
 }
-span:lang(bn) {
+div:lang(bn) {
   font-family: 'Noto Sans Bengali Light', sans-serif;
 }
 
@@ -37,6 +37,10 @@ img {
   border: 0.2em solid #333333;
   padding: 0.1em;
   border-radius: 50%;
+}
+
+#details {
+  margin-top: 1em;
 }
 
 .row {
