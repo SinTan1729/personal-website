@@ -11,7 +11,7 @@ body {
   background-color: light-dark(white, #181a1b);
 }
 h1 {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 div:lang(bn) {
   font-family: 'Noto Sans Bengali Light', sans-serif;
@@ -75,10 +75,6 @@ a.button {
   user-select: none;
 }
 
-.mobile-view {
-  display: none;
-}
-
 .abstract,
 .muted {
   font-size: 0.9em;
@@ -135,13 +131,5 @@ nav {
 
   .header {
     display: inline;
-  }
-
-  .pc-view {
-    display: none;
-  }
-
-  .mobile-view {
-    display: block;
   }
 }

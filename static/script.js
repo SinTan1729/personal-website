@@ -17,8 +17,8 @@ const putLastModifiedTime = () => {
 // Start loading here
 putLastModifiedTime();
 // This uses KaTeX script loaded earlier
-document.body.querySelectorAll('.math').forEach((item) => {
-  renderMathInElement(item, {
+document.body.querySelectorAll('.math').forEach((elem) => {
+  renderMathInElement(elem, {
     delimiters: [{ left: '\\(', right: '\\)', display: false }],
     throwOnError: true,
   });
