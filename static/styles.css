@@ -13,7 +13,7 @@ body {
 h1 {
   font-size: 1.3em;
 }
-.bangla {
+span:lang(bn) {
   font-family: 'Noto Sans Bengali Light', sans-serif;
 }
 
