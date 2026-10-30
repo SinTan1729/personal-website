@@ -14,7 +14,7 @@ h1 {
   font-size: 1.3em;
 }
 .bangla {
-  font-family: "Noto Sans Bengali Light", sans-serif;
+  font-family: 'Noto Sans Bengali Light', sans-serif;
 }
 
 .container {
@@ -75,7 +75,7 @@ a.button {
   display: none;
 }
 
-.details,
+.abstract,
 .muted {
   font-size: 0.9em;
   color: light-dark(#6b7280, #9ca3af);
