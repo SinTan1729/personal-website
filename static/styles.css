@@ -34,6 +34,7 @@ div:lang(bn) {
 }
 
 img {
+  width: 10em;
   border: 0.2em solid #333333;
   padding: 0.1em;
   border-radius: 50%;
